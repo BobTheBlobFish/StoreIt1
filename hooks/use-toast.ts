@@ -28,8 +28,12 @@ const actionTypes = {
 let count = 0
 
 function genId() {
-  count = (count + 1) % Number.MAX_SAFE_INTEGER
-  return count.toString()
+  // Only generate IDs on the client side to prevent hydration mismatches
+  if (typeof window === 'undefined') {
+    return 'server-id';
+  }
+  count = (count + 1) % Number.MAX_SAFE_INTEGER;
+  return count.toString();
 }
 
 type ActionType = typeof actionTypes
@@ -158,7 +162,7 @@ function toast({ ...props }: Toast) {
       ...props,
       id,
       open: true,
-      onOpenChange: (open) => {
+      onOpenChange: (open: boolean) => {
         if (!open) dismiss()
       },
     },

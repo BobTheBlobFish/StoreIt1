@@ -11,24 +11,24 @@ const config: Config = {
   	extend: {
   		colors: {
   			brand: {
-  				'100': '#EA6365',
-  				DEFAULT: '#FA7275'
+  				'100': '#00FF41',
+  				DEFAULT: '#003300'
   			},
-  			red: '#FF7474',
-  			error: '#b80000',
-  			green: '#3DD9B3',
-  			blue: '#56B8FF',
-  			pink: '#EEA8FD',
-  			orange: '#F9AB72',
+  			red: '#FF6B6B',
+  			error: '#FF4757',
+  			green: '#2ED573',
+  			blue: '#3742FA',
+  			pink: '#FF6B9D',
+  			orange: '#FFA502',
   			light: {
-  				'100': '#333F4E',
-  				'200': '#A3B2C7',
-  				'300': '#F2F5F9',
-  				'400': '#F2F4F8'
+  				'100': '#F1F2F6',
+  				'200': '#DFE4EA',
+  				'300': '#2F3542',
+  				'400': '#1E272E'
   			},
   			dark: {
-  				'100': '#04050C',
-  				'200': '#131524'
+  				'100': '#0C0C0C',
+  				'200': '#1A1A1A'
   			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
